@@ -3,6 +3,7 @@
 ## 📘 Descripción del Proyecto
 
 Este proyecto tiene como objetivo **practicar la recuperación, almacenamiento y validación de información en formato XML dentro del Sistema Gestor de Base de Datos Oracle**.  
+
 Se implementa un conjunto de sentencias SQL y PL/SQL que permiten generar un documento XML a partir del esquema **HR**, registrar su **esquema XSD** en la base de datos, y crear mecanismos de validación mediante **triggers** antes de la inserción de datos.
 
 El ejercicio demuestra cómo Oracle puede **manipular estructuras XML de forma nativa**, garantizando la integridad de los datos mediante la combinación de tecnologías **SQL/XML**, **XML Schema**, y **XMLType**.
