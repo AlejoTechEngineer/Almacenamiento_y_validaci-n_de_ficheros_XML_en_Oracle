@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Definición del elemento raíz -->
+  <xs:element name="empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empleado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="apellido" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="telefono" type="xs:string" minOccurs="0"/>
+              <xs:element name="fecha_contratacion" type="xs:date"/>
+              <xs:element name="salario" type="xs:decimal"/>
+              <xs:element name="departamento">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre_dept" type="xs:string"/>
+                    <xs:element name="ubicacion" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="id_dept" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id_empleado" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
