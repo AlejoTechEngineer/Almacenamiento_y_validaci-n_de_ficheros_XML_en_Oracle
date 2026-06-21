@@ -119,6 +119,22 @@ flowchart TD
     H -->|No| I[RAISE_APPLICATION_ERROR - rechazo insercion]
 ```
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[empleados.xml] --> B[empleados_departamentos.xsd - validacion XSD]
+    B --> C[HR_XML_LAB.sql]
+    C --> D[XMLTYPE - almacenamiento nativo Oracle]
+    D --> E[(Oracle DB - Esquema HR)]
+    C --> F[HR_Connection.sql]
+    F --> E
+    C --> G[TRIGGER validacion_antes_insertar]
+    G --> H{XML valido contra XSD?}
+    H -->|Si| E
+    H -->|No| I[RAISE_APPLICATION_ERROR - rechazo insercion]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  
