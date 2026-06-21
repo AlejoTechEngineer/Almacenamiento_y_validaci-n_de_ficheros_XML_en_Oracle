@@ -1,6 +1,12 @@
+<div align="center">
+
 # 🧩 Laboratorio No. 1 — Almacenamiento y Validación de Ficheros XML en Oracle
 
 ## 📘 Descripción del Proyecto
+
+</div>
+
+---
 
 Este proyecto tiene como objetivo **practicar la recuperación, almacenamiento y validación de información en formato XML dentro del Sistema Gestor de Base de Datos Oracle**.  
 
@@ -94,3 +100,12 @@ Especialización en Inteligencia Artificial
 
 Este proyecto fue desarrollado con fines **académicos**.  
 Se permite su uso, distribución y adaptación siempre que se otorgue el crédito correspondiente al autor original.
+
+---
+
+## Autor
+
+**Alejandro De Mendoza**  
+Ingeniero Informático · Especialista en IA · Especialista en Ingeniería de Software · Máster en Arquitectura de Software
+
+[![GitHub](https://img.shields.io/badge/GitHub-AlejoTechEngineer-181717?style=for-the-badge&logo=github)](https://github.com/AlejoTechEngineer)
